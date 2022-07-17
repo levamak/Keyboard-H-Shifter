@@ -10,3 +10,4 @@ If you want to stop simulating vJoy buttons, press 'End' in the app.
 
 # How does it work?
 Using tidzo's library pyvjoy(https://github.com/tidzo/pyvjoy) we can modify the state of vJoy buttons, and with the help of 'pynput' we can bind those commands to keyboard buttons. The way that it works is that once you click the 'gear' button on your keyboard, it will simulate a continuos press of a vJoy device button. Example: by pressing '1' with default settings in the app you will simulate '1' button in the vJoy and it will not release itself until you press another gear or neutral, which releases all the buttons.
+NOTE: if you want to run and build it yourself, you have to extract the 'dont_steal_this.ico' from the rar file and place it in the same folder with main.py in order for it to work
