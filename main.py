@@ -167,7 +167,9 @@ app.configure(width=400, height=200, background=bg_def)
 app.resizable(0, 0)
 app.title('H-Shifter for AC')
 
-app.iconbitmap(os.getcwd() +"\dont_steal_this.ico")
+
+if "dont_steal_this.ico" in os.listdir(os.getcwd()):
+    app.iconbitmap(os.getcwd() +"\dont_steal_this.ico")
 
 
 gearFrame = tk.Frame(app, highlightthickness=1, highlightcolor=white, highlightbackground=gray,
